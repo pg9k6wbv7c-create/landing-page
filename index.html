@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+<body>
+  <header id="header">
+
+      <div class="logo-container">
+        <img id="header-img1" src="file:///Users/chrisdenzik/HTML/FreeCodeCamp Projects/Product Landing Page CP/website-logo-medium.png" alt="GMA Martial Arts Logo">
+      </div>
+
+        <nav id="nav-bar">
+      
+          <a class="nav-link" href="#programs">Programs</a>
+          <a class="nav-link" href="#class-times">Class Times</a>
+          <a class="nav-link" href="#pricing">Pricing</a>
+
+      </nav>
+
+      <div class="logo-container">
+        <img id="header-img2" class="header-img2" src="file:///Users/chrisdenzik/HTML/FreeCodeCamp Projects/Product Landing Page CP/website-logo-medium.png" alt="GMA Martial Arts Logo">
+      </div>
+   
+  </header>
+  <main>
+    <section id="programs">
+      <iframe width="600" height="400" src="https://www.youtube.com/embed/1-VwMhsamw4" title="Global Martail Arts USA - Gallatin GMA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="programs-container">
+      <h2 class="programs-header">👊🏼   Choose from 5 styles!   👊🏼 </h2>
+        <ul class="programs-list">
+          <li class="program-title">Taekwondo as young as age 3</li>
+          <li class="program-title">Hapkido for adults</li>
+          <li class="program-title">Brazilian Jiu Jitsu as young as age 5</li>
+          <li class="program-title">Tai-Chi for teens and adults</li>
+          <li class="program-title">Wing Chun for teens and adults</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="class-times">
+      <h2 class="class-times-header">💥   Check out our flexible class schedules!   💥</h2>
+      <div class="tkd">
+      <ul>
+        <li class="style">Taekwondo
+          <ul>
+            <li class="sub-style">
+              <p>Little Lions ages 3-6:</p>
+              <p>M-F @ 3:30p</p>
+              <p>M, W @ 6:15p</p>
+            </li>
+
+            <li class="sub-style">
+              <p>Juniors ages 7-16:</p>
+              <p>M-F @ 4:00p, 4:45p</p>
+              <p>M, W, F @ 10:30a</p>
+            </li>
+
+            <li class="sub-style">
+              <p>Families ages 7-Adult:</p>
+              <p>M-F @ 5:30p</p>
+              <p>T, Th @ 6:15p</p>
+            </li>
+
+            <li class="sub-style">
+              <p>Teens and Adults:</p>
+              <p>M-Th @ 7:00p</p>
+              <p>M, W, F @ 10:30a</p>
+            </li>
+          </ul>
+        </li>
+        </ul>
+      </div>
+
+      <div class="hpk">
+        <ul>
+        <li class="style">Hapkido
+            <ul>
+              <li class="sub-style">M-Th @ 7:00p</li>
+            </ul>
+        </li>
+        </ul>
+      </div>
+
+      <div class="bjj">
+        <ul>
+        <li class="style">Brazilian Jiu Jitsu
+          <ul>
+            <li class="sub-style">Kids ages 5-14: M, T, W, F @ 4:45p</li>
+            <li class="sub-style">Teens and Adults: M, W, F @ 5:45p; Tues @ 5:30p; M, W, F @ 6:45p</li>
+          </ul>
+        </li>
+        </ul>
+      </div>
+
+      <div class="tai-chi">
+        <ul>
+        <li class="style">Tai Chi
+          <ul>
+            <li class="sub-style">M, T, W, F @ 8:30a</li>
+          </ul>
+        </li>
+        </ul>
+      </div>
+
+      <div class="wing-chun">
+        <ul>
+        <li class="style">Wing Chun
+          <ul>
+            <li class="sub-style">M, T, W, F @ 9:30a</li>
+          </ul>
+        </li>
+      </ul>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <div class="pif">
+      <ul>
+        <li class="prices-1">Paid in Full
+          <ol>
+            <li class="rates">Monthly Rate: $250</li>
+            <li class="rates">3 Months: $600</li> 
+            <li class="rates">6 Months: $1000</li>
+            <li class="rates">12 Months: $1900</li>
+            <li class="rates">24 Months: $3400</li>
+          </ol>
+        </li>
+      </ul>
+      </div>
+        <div class="alert-1">Paid in Full programs are non-refundable and include the uniform for your program.</div>
+        
+      <div class="financed">
+        <ul>
+        <li class="prices-2">Pay Monthly
+          <ol>
+            <li class="rates">Monthly Rate: $250</li>
+            <li class="rates">6 Months: $170/month</li> 
+            <li class="rates">12 Months: $160/month</li>
+            <li class="rates">24 Months: $145/month</li>
+            <li class="rates">We do not finance 3 Month programs</li>
+          </ol>
+        </li>
+      </ul>
+      </div>
+        <div class="alert-2">Financed programs require a non-refundable deposit (TKD=$250 BJJ=$300) and include the uniform for your program. An ACH withdrawal from a card you place on file with us will occur each month on the designated date in your contract. Cancellation requirements must be met to discontinue payments.</div>
+    </section>
+
+  <footer>
+    <form id="form" action="https://www.freecodecamp.org/email-submit" method="POST">
+      <label for="email">Email: </label>
+      <input id="email" name="email" type="email" required placeholder="Enter email here">
+      <button type="submit" class="submit">Submit</button>
+      <p class="email-p">To set up your FREE trial class, enter you email and one of our instructors will be in touch shortly</p>
+    </form>
+  </footer>
+
+  </main>
+</body>
+
+</html>
