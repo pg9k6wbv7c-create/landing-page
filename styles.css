@@ -1,0 +1,275 @@
+html {
+  font-size: 1rem;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, sans-serif;
+  margin: 80px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkgray;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  padding: 10px 0;
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.logo-container {
+  height: 30px;
+  width: auto;
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 80px;
+}
+
+#nav-bar a {
+  text-decoration: none;
+  font-size: 1.75rem;
+  color: #ff8080;
+  padding: 0 20px;
+}
+img {
+  height: 60px;
+  margin: auto;
+  padding: 0 70px;
+}
+/* end of navbar */
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#programs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "header video";
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding-bottom: 30px;
+}
+
+.programs-container {
+  text-align: center;
+  grid-area: header;
+  width: 100%;
+}
+
+.programs-header {
+  margin: auto;
+  margin-left: 5px;
+  margin-top: 30px;
+  font-size: 2.5rem;
+  transform: rotate(-1deg);
+  background-color: red;
+  text-shadow: 1px 1px gray;
+  box-shadow: 1px 1px 0.5px white;
+}
+
+.programs-list {
+  display: block;
+  text-align: center;
+  width: 70%;
+  animation: fadeIn 3s ease-out forwards;
+  margin: auto;
+  padding-right: 30px;
+  margin-top: 30px;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 1%;
+  box-shadow: 1px 1px 0.5px white;
+}
+
+.program-title {
+  list-style-type: none;
+  padding: 20px;
+  font-size: 2rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: antiquewhite;
+  filter: contrast(40%)
+}
+
+iframe {
+  align-items: center;
+  grid-area: video;
+  margin: auto;
+}
+/* end of first section element */
+
+#class-times {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "header header header"
+  "tkd hpk bjj"
+  "tkd tai-chi wing-chun";
+  background-color: black;
+}
+
+.class-times-header {
+  width: 100%;
+  margin: auto;
+  margin-top: 0;
+  font-size: 3rem;
+  grid-area: header;
+  text-align: center;
+  border: 1px solid black;
+  background-color: dodgerblue;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+p {
+  line-height: 30%;
+}
+.style {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin: auto;
+}
+.tkd {
+  grid-area: tkd;
+  margin-top: -30%;
+  border: 1px solid black;
+  color: cornflowerblue;
+}
+.hpk {
+  grid-area: hpk;
+  border: 1px solid black;
+  margin-top: -30%;
+  color: crimson;
+}
+.bjj {
+  grid-area: bjj;
+  border: 1px solid black;
+  margin-top: -30%;
+  color: burlywood;
+
+}
+.tai-chi {
+  grid-area: tai-chi;
+  border: 1px solid black;
+  color: coral;
+}
+.wing-chun {
+  grid-area: wing-chun;
+  border: 1px solid black;
+  color: green;
+}
+/* end of second section element */
+
+#pricing {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 200px 40px 50px;
+  grid-template-areas: 
+  "prices1 prices2"
+  "alert1 alert1"
+  "alert2 alert2";
+  border: 1px solid black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5rem;
+  padding: 20px;
+  background-color: black;
+  border-top: 2px solid white;
+}
+
+.pif {
+  grid-area: prices1;
+  margin: auto;
+  line-height: 1.75rem;
+  color: burlywood;
+}
+
+.financed {
+  grid-area: prices2;
+  margin: auto;
+  line-height: 1.75rem;
+  color: burlywood;
+}
+
+.alert-1 {
+  grid-area: alert1;
+  text-align: center;
+  color: red;
+  padding: 10px 0;
+}
+.alert-2 {
+  grid-area: alert2;
+  text-align: center;
+  color: red;
+  padding: 10px 0;
+}
+.prices-1 {
+  list-style-type: none;
+}
+.prices-2 {
+  list-style-type: none;
+}
+/* end of section 2 */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  background-color: dodgerblue;
+}
+
+.email-p {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1.5rem;
+}
+input, label {
+  margin: 15px 0;
+  font-size: 2rem;
+}
+label {
+  text-shadow: 1px 1px 1px white;
+  font-weight: bold;
+}
+.submit {
+  margin: auto 0;
+  font-size: 2rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px white;
+}
+
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #header-img {
+    display: flex;
+    justify-content: center;
+  }
+}
